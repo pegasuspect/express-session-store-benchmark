@@ -1,5 +1,5 @@
 {
-  "name": "Session Stores Speed Test",
+  "name": "Session-Stores-Speed-Test",
   "version": "0.0.1",
   "dependencies": {
     "connect-mongo": "^1.1.0",
