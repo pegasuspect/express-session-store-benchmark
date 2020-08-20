@@ -2,7 +2,7 @@
 
 
 store=( none memory redis mongo)
-concurrency=( 1 10 100 500)
+concurrency=( 1 10 100 1000)
 
 for c in "${concurrency[@]}"
 do
