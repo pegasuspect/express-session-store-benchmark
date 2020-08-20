@@ -2,10 +2,12 @@
   "name": "Session-Stores-Speed-Test",
   "version": "0.0.1",
   "dependencies": {
-    "connect-mongo": "^1.1.0",
-    "connect-redis": "^3.0.2",
-    "cookie-parser": "^1.4.1",
-    "express": "^4.13.4",
-    "express-session": "^1.13.0"
+    "connect-mongo": "^3.2.0",
+    "connect-redis": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.0",
+    "redis": "^3.0.2"
   }
 }
