@@ -13,8 +13,11 @@ do
 		node "${s}" &
 		PID=$!
 		sleep 2 # so the server can settle
-		ab -c ${c} -n 10000 http://localhost:5000/ 2>/dev/null | grep "Requests per second" | cut -c 22-40
 		kill $PID
 		wait $PID > /dev/null
+		docker run --rm jordi/ab -q -k -c $c -n 10000 \
+			"http://$HOSTNAME:5000/" | \
+			grep "Requests per second" | \
+			awk '{ print $4,$5 }'
 	done
 done
